@@ -1,0 +1,15 @@
+import java.util.Arrays;
+
+public class MethodRef {
+    public static void main(String[] args) {
+        String[] words = {"elderberry", "apple", "banana", "cherry", "date"};
+
+        // Using explicit lambda expression for sorting
+        Arrays.sort(words, (a, b) -> a.compareToIgnoreCase(b));
+        Arrays.stream(words).forEach(System.out::println);
+
+        Arrays.sort(words, String::compareToIgnoreCase);
+        Arrays.stream(words).forEach(System.out::println);
+    }
+
+}
