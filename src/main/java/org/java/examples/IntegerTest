@@ -1,0 +1,15 @@
+public class IntegerTest {
+    public static void main(String[] args) {
+        // 09 not allowed to be assigned to int, Integer
+        /*int i = 09;
+        Integer a = 09;
+        Integer c = new Integer(09);*/
+
+
+        // This is allowed
+        int j = 9;
+        Integer b = 9;
+
+
+    }
+}
